@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h1>Quiz App</h1>
+      <form id="quizForm">
+        <div class="question">
+          <h3>1. What is the capital of India?</h3>
+          <div class="options">
+            <label><input type="radio" name="q1" value="Delhi" /> Delhi</label>
+            <label
+              ><input type="radio" name="q1" value="Mumbai" /> Mumbai</label
+            >
+            <label
+              ><input type="radio" name="q1" value="Kolkata" /> Kolkata</label
+            >
+          </div>
+        </div>
+        <div class="question">
+          <h3>2. What is 2 + 5?</h3>
+          <div class="options">
+            <label><input type="radio" name="q2" value="3" /> 3</label>
+            <label><input type="radio" name="q2" value="7" /> 7</label>
+            <label><input type="radio" name="q2" value="5" /> 5</label>
+          </div>
+        </div>
+        <div class="question">
+          <h3>3. Which programming language is used for web development?</h3>
+          <div class="options">
+            <label
+              ><input type="radio" name="q3" value="Python" /> Python</label
+            >
+            <label
+              ><input type="radio" name="q3" value="JavaScript" />
+              JavaScript</label
+            >
+            <label><input type="radio" name="q3" value="C++" /> C++</label>
+          </div>
+        </div>
+        <div class="buttons">
+          <button type="button" class="submit" onclick="submitQuiz()">
+            Submit
+          </button>
+          <button type="reset" class="reset">Reset</button>
+        </div>
+      </form>
+      <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
