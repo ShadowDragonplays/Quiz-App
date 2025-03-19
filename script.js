@@ -2,7 +2,9 @@ function submitQuiz() {
   const answers = {
     q1: "Delhi",
     q2: "7",
-    q3: "JavaScript",
+    q3: "CSS",
+    q5: "JavaScript",
+    q4: "Hyper Text Markup Language",
   };
 
   let score = 0;
