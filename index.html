@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   </head>
   <body>
     <div class="quiz-container">
       <h1>Quiz App</h1>
+      <div id="timer" class="timer"></div>
       <form id="quizForm">
         <div class="question">
           <h3>1. What is the capital of India?</h3>
@@ -31,18 +33,18 @@
           </div>
         </div>
         <div class="question">
-          <h3>2. Which Language is used to Styling a html webpage ?</h3>
+          <h3>3. Which language is used for styling a webpage?</h3>
           <div class="options">
-            <label><input type="radio" name="q3" value="CSS" /> CSS </label>
+            <label><input type="radio" name="q3" value="CSS" /> CSS</label>
             <label
               ><input type="radio" name="q3" value="JavaScript" />
               JavaScript</label
             >
-            <label><input type="radio" name="q3" value="react" /> react </label>
+            <label><input type="radio" name="q3" value="React" /> React</label>
           </div>
         </div>
         <div class="question">
-          <h3>2. What does HTML stands for?</h3>
+          <h3>4. What does HTML stand for?</h3>
           <div class="options">
             <label
               ><input
@@ -58,8 +60,8 @@
                 name="q4"
                 value="Hetro Text Machine Language"
               />
-              Hetro Text Machine Language
-            </label>
+              Hetro Text Machine Language</label
+            >
             <label
               ><input
                 type="radio"
@@ -71,7 +73,7 @@
           </div>
         </div>
         <div class="question">
-          <h3>3. Which programming language is used for web development?</h3>
+          <h3>5. Which programming language is used for web development?</h3>
           <div class="options">
             <label
               ><input type="radio" name="q5" value="Python" /> Python</label
@@ -90,8 +92,17 @@
           <button type="reset" class="reset">Reset</button>
         </div>
       </form>
-      <div class="result" id="result"></div>
     </div>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span id="closePopup" class="close">&times;</span>
+        <div id="popupIcon" class="popup-icon"></div>
+        <h2 id="popupTitle">Quiz Result</h2>
+        <p id="popupMessage"></p>
+      </div>
+    </div>
+    <audio id="booSound" src="audios/wompWomp.mp3"></audio>
+    <audio id="yaySound" src="audios/yay.mp3"></audio>
     <script src="script.js"></script>
   </body>
 </html>
